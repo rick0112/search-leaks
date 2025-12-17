@@ -18,6 +18,7 @@ Modes (only one allowed; default is automatic):
   --automatic, -a                     Auto-detect endpoint per target (default)
   --domain, -d                        Force domain endpoint (emails will be converted to their domain)
   --email, -e                         Force email endpoint (domains will expand to common mailbox aliases)
+  --statistics, -stats                Domain-only: print only core statistics fields
 
 Output:
   --silent, -s                        Results only (no banner)

@@ -16,7 +16,7 @@ import (
 
 const (
 	ToolName    = "search-leaks"
-	ToolVersion = "v1.0.1-stable"
+	ToolVersion = "v1.0.2-stable"
 )
 
 func main() {
@@ -125,7 +125,14 @@ func main() {
 			pr.PrintHeader(r.OriginalTarget, r.URL)
 
 			// Flatten JSON to lines
-			lines := output.FlattenJSON(resp)
+//			lines := output.FlattenJSON(resp)
+			var lines []output.FlatLine
+
+			if cfg.Statistics && r.Endpoint == "domain" {
+				lines = output.FlattenDomainStatistics(resp)
+			} else {
+				lines = output.FlattenJSON(resp)
+			}
 
 			// Print lines in requested style
 			for _, line := range lines {

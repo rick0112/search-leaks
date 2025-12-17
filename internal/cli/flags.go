@@ -21,6 +21,8 @@ type Config struct {
 	Debug   bool
 
 	NoColor bool
+
+    Statistics bool
 }
 
 type multiStringFlag []string
@@ -62,6 +64,9 @@ func ParseFlags(args []string) (Config, error) {
 
 	fs.BoolVar(&cfg.ModeDomain, "domain", false, "Force domain endpoint for all items")
 	fs.BoolVar(&cfg.ModeDomain, "d", false, "Alias for --domain")
+
+	fs.BoolVar(&cfg.Statistics, "statistics", false, "Domain-only: print only core statistics fields")
+	fs.BoolVar(&cfg.Statistics, "stats", false, "Alias for --statistics")
 
 	fs.BoolVar(&cfg.ModeEmail, "email", false, "Force email endpoint for all items")
 	fs.BoolVar(&cfg.ModeEmail, "e", false, "Alias for --email")

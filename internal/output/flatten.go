@@ -131,3 +131,37 @@ func arrayLabelFromKey(keyPath string) string {
 	}
 	return last
 }
+
+func FlattenDomainStatistics(v any) []FlatLine {
+    obj, ok := v.(map[string]any)
+    if !ok || obj == nil {
+        // Fallback to generic flatten if response is not an object
+        return FlattenJSON(v)
+    }
+
+    // Allowed domain-only keys (top-level)
+    allowed := []string{
+        "total",
+        "employees",
+        "users",
+        "third_parties",
+        "last_employee_compromised",
+        "last_user_compromised",
+    }
+
+    out := make([]FlatLine, 0, len(allowed))
+    for _, k := range allowed {
+        val, exists := obj[k]
+        if !exists {
+            // If missing, skip (or you can print "null" explicitly if you prefer)
+            continue
+        }
+        out = append(out, FlatLine{
+            Brackets: nil,
+            Key:      k,
+            Value:    fmtValue(val),
+        })
+    }
+
+    return out
+}
